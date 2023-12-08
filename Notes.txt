@@ -1,0 +1,33 @@
+https://www.youtube.com/watch?v=hmgYDbBZGiw
+
+https://pythonhow.com/what/add-existing-venv-pycharm/#:~:text=In%20the%20Settings%20window%2C%20go,location%20of%20the%20virtual%20environment.
+
+It looks like you are trying to activate a virtual environment in a Django project using the command `venv\Scripts\activate`, but you're encountering an error. The error message you're seeing suggests that the command is not found. This issue might be related to the way you're specifying the path or using the wrong command based on your operating system.
+
+Here's how you can activate a virtual environment in PyCharm on macOS:
+
+1. Open your project in PyCharm.
+
+2. Open the terminal in PyCharm.
+
+3. Navigate to your project directory:
+
+```bash
+cd /path/to/your/project/mysite
+```
+
+4. Activate the virtual environment using the `source` command:
+
+```bash
+source venv/bin/activate
+```
+
+Make sure to replace `/path/to/your/project` with the actual path to your Django project.
+
+If you're using Windows, you can activate the virtual environment like this:
+
+```bash
+venv\Scripts\activate
+```
+
+Please ensure that you are using the correct slashes for your operating system ("/" for macOS and "\" for Windows) and that you are navigating to the correct directory where your virtual environment is located. If you still encounter issues, double-check your virtual environment setup in PyCharm and make sure it's properly configured.
